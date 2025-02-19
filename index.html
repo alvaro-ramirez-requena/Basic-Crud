@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD CON JS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container-card">
+        <h1 class="title">Esto es un crud</h1>
+        <div class="ask-data">
+            <form id="form" class="form">
+                <label for="name">Nombre</label>
+                <input id="name" type="text" class="name" required>
+
+                <label for="number">Numero</label>
+                <input id="number" type="text" class="number" required>
+
+                <label for="cursos">Cursos</label>
+                <select id="cursos" class="cursos" required>
+                    <option value="">Selecciona tu curso</option>
+                    <option value="matematica">Matematicas</option>
+                    <option value="biologia">Biologia</option>
+                    <option value="lenguaje">Lenguaje</option>
+                </select>
+
+                <button class="button" id="button">Agregar</button>
+            </form>
+        </div>
+        <div id="data-crud" class="data-crud">
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

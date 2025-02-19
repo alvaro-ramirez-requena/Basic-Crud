@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(44, 42, 42);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-card{
+    text-align: center;
+    background-color: rgb(72, 115, 197);
+    padding: 0.7rem;
+    border-radius: 0.8rem;
+    font-size: 2rem;
+    border: 2.5px solid black;
+    font-family: sans-serif;
+}
+.container-card .title{
+    color: black;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+.form label{
+    text-align:start;
+}
+
+.container-card :is(.button-edit, .button-del){
+    padding: 3px;
+    border-radius: .4rem;
+}
+.button-edit{
+    background-color: rgb(81, 163, 81);
+}
+
+.button-del{
+    background-color: rgb(216, 75, 75);
+}
+
+.data-crud{
+    margin-top: 1rem;
+    /* border: 2px solid black; */
+    font-size: 1.3rem;
+}
+.container-admin{
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit,minmax(20px, 1fr)); */
+    /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+    grid-template-columns: 2fr 1fr;
+    border-radius: .3rem;
+    /* padding: .2rem; */
+    /* justify-content: space-between; */
+    border: 2px solid black;
+    margin-top: .4rem;
+}
+
+.container-dat{
+    background-color: rgb(224, 68, 68);
+    padding: .5rem;
+    border-radius: .2rem;
+    display: grid;
+    grid-template-columns: 3fr 3fr 1.5fr;
+    /* margin-right: 4rem; */
+    width: 100%;
+}
+
+.container-buttons{
+    padding: .2rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.container-buttons button{
+    font-size: 1rem;
+}
+
+.ask-data .button{
+    background-color: rgb(49, 194, 49);
+    border: 0;
+    border-radius: 0.2rem;
+    padding: .3rem;
+    width: 11rem;
+    height: 2.5rem;
+    margin-inline: auto;
+    font-size: 1.5rem;
+    margin-top: .8rem;
+}
+
+.name, .number, .cursos{
+    padding: .2rem;
+    width: 70rem;
+    font-size: 1rem;
+}
+
+.container-dat :first-child{
+    text-align: start;
+}
+
