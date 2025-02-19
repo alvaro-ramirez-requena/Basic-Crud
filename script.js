@@ -54,6 +54,7 @@ const del = (index) => {
     const newdata = data.filter((dat, i) => i != index)
     data = newdata
     fill()
+    numfix = null
 
 }
 
